@@ -42,17 +42,20 @@ duckdns:
     required: true
     type: string
   ipv4_fetch_url:
-    description: The URL used to fetch your IPv4 address. Default: https://api.ipify.org
+    description: The URL used to fetch your IPv4 address.
     required: false
     type: string
+    default: "`api.ipify.org`"
   ipv6_fetch_url:
-    description: The URL used to fetch your IPv6 address. Default: https://api6.ipify.org
+    description: The URL used to fetch your IPv6 address.
     required: false
     type: string
+    default: "`api6.ipify.org`"
   ip_update_mode:
-    description: The ip update mode ("ipv4", "ipv6", "both"). Default: ipv4 
+    description: "The IP update mode. Values: `ipv4`, `ipv6`, `both`.
     required: false
     type: string
+    default: "`ipv4`"
 {% endconfiguration %}
 
 ## Action `set_txt`
