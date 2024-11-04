@@ -59,7 +59,9 @@ duckdns:
 {% endconfiguration %}
 
 {% important %}
+
 When using custom fetch URLs for IPv4 or IPv6, ensure they are from trusted sources and use HTTPS protocol to prevent potential man-in-the-middle attacks.
+
 {% endimportant %}
 
 ## Action `set_txt`
