@@ -52,7 +52,7 @@ duckdns:
     type: string
     default: "`api6.ipify.org`"
   ip_update_mode:
-    description: "The IP update mode. Values: `ipv4`, `ipv6`, `both`.
+    description: "The IP update mode. Values: `ipv4`, `ipv6`, `both`."
     required: false
     type: string
     default: "`ipv4`"
