@@ -45,18 +45,22 @@ duckdns:
     description: The URL used to fetch your IPv4 address.
     required: false
     type: string
-    default: "`api.ipify.org`"
+    default: "`https://api.ipify.org`"
   ipv6_fetch_url:
     description: The URL used to fetch your IPv6 address.
     required: false
     type: string
-    default: "`api6.ipify.org`"
+    default: "`https://api6.ipify.org`"
   ip_update_mode:
     description: "The IP update mode. Values: `ipv4`, `ipv6`, `both`."
     required: false
     type: string
     default: "`ipv4`"
 {% endconfiguration %}
+
+{% note title="Security" %}
+When using custom fetch URLs for IPv4 or IPv6, ensure they are from trusted sources and use HTTPS protocol to prevent potential man-in-the-middle attacks.
+{% endnote %}
 
 ## Action `set_txt`
 
